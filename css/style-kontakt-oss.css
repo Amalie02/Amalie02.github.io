@@ -91,7 +91,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: grey; */
 }
 /*Hvordan bruke flere farger som bakgrunn. Hentet fra: https://www.w3schools.com/css/css3_gradients.asp*/
 
@@ -100,7 +99,6 @@ header{
     justify-content: center;
     width: 100%;
     background-color: #ffffff;
-    /* border: 2px solid black; */
     opacity: 0.6;
 }
 
@@ -157,7 +155,6 @@ label {
 
 input[type=submit] {
   background-color: #CEEAD6;
-  /* color: white; */
   padding: 2px;
   border: 1px solid white;
   border-radius: 4px;
@@ -178,13 +175,11 @@ input[type=submit] {
 .input {
   float: left;
   width: 100%;
-  /* margin-top: 6px; */
 }
 
 .inputOmrade {
   float: left;
   width: 100%;
-  /* margin-top: 6px; */
 }
 
 .inputOmrade textarea{

@@ -19,7 +19,7 @@ body h2, body h3{
     font-family: 'Raleway', sans-serif;
 }
 
-body p, nav a{
+body p, body a{
     font-size: 0.7rem;
     font-family: 'Raleway', sans-serif;
 }
@@ -103,6 +103,104 @@ header{
 
 main{
     grid-area: main;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5; 
+}
+
+#intro{
+    background-color: burlywood;
+}
+
+#intro p{
+    font-weight: bold;
+    margin: 0.5rem;
+}
+
+.innhold{
+    margin: 5rem 0.5rem 5rem 0.5rem;
+}
+
+.innhold p{
+    text-align: justify;
+}
+
+.tabell{
+    display: grid;
+    grid-template-rows: 10vw 10vw 100px 10vw 100px 15vw auto;
+    grid-template-columns: 1fr;
+    background-color: #b3e5fc;
+    margin: 2vw;
+}
+
+.celle{
+    display: flex;
+    align-items: center;
+    padding: 3vw;
+    border: 1px solid black;
+}
+
+.side{
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    justify-content: center;
+}
+
+.r{
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    border-top: none;
+}
+
+.res{
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+    border-top: none;
+}
+
+.t{
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 1;
+    border-top: none;
+}
+.til{
+    grid-row: 5 / span 1;
+    grid-column: 1 / span 1;
+    border-top: none;
+}
+
+.b{
+    grid-row: 6 / span 1;
+    grid-column: 1 / span 1;
+    border-top: none;
+}
+
+.etter{
+    display: flex;
+    justify-content: center;
+    grid-row: 7 / span 1;
+    grid-column: 1 / span 1;
+    padding: 5vw;
+}
+
+.etter img{
+    width: 10vw;
+}
+
+#uuE{
+    display: flex;
+    justify-content: center;
+}
+#uuE p{
+    color: white;
+    background-color: #CEEAD6;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    min-width: 60vw;
+    max-width: 70vw;  
+  
 }
 
 footer{
@@ -165,7 +263,7 @@ footer{
         font-size: calc(1rem + 1vw);
     }
     
-    body p, nav a{
+    body p, body a{
         font-size: calc(0.7rem + 1vw);
     }
     /*Kode for å gjøre tekst responsivt. Hentet fra: https://blog.hubspot.com/website/responsive-text*/
@@ -203,6 +301,49 @@ footer{
         margin-top: 3vw;
     }
 
+    .tabell{
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .venstre{
+        border-left: none;
+    }
+    
+    .side{
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 2;
+    }
+    
+    .r{
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 1;
+    }
+    
+    .res{
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 1;
+    }
+    
+    .t{
+        grid-row: 2 / span 1;
+        grid-column: 2 / span 1;
+    }
+    .til{
+        grid-row: 3 / span 1;
+        grid-column: 2 / span 1;
+    }
+    
+    .b{
+        grid-row: 4 / span 1;
+        grid-column: 1 / span 2;
+    }
+    
+    .etter{
+        grid-row: 5 / span 1;
+        grid-column: 1 / span 2;
+    }
+    
 }
 
 @media only screen and (min-width: 900px) {
@@ -241,6 +382,53 @@ footer{
 
     #subnav_innhold a{
         color: white;
+    }
+
+    .tabell{
+        grid-template-rows: 10vw 15vw 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .celle{
+        /* display: flex;
+        align-items: center;
+        padding: 3vw;
+        border: 1px solid black; */
+    }
+    
+    .side{
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 3;
+    }
+    
+    .r{
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 1;
+    }
+    
+    .res{
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 1;
+    }
+    
+    .t{
+        grid-row: 2 / span 1;
+        grid-column: 2 / span 1;
+    }
+    .til{
+        grid-row: 3 / span 1;
+        grid-column: 2 / span 1;
+    }
+    
+    .b{
+        grid-row: 2 / span 1;
+        grid-column: 3 / span 1;
+        border-left: none;
+    }
+    
+    .etter{
+        grid-row: 3 / span 1;
+        grid-column: 3 / span 1;
     }
 
     .sosialeM{
