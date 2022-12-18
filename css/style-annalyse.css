@@ -123,6 +123,14 @@ main{
 
 .innhold p{
     text-align: justify;
+    float: right;
+}
+
+#b1{
+    float: right;
+    padding: 1.5vw;
+    width: 70vw;
+    max-width: 400px;
 }
 
 .tabell{
