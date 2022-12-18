@@ -78,7 +78,12 @@
                 <h2 itemprop="about alternativeHeadline breadcrumb">Wave</h2>
                 <img src="#" alt="Bilde av en laptop med texten seo på.">
                 <!--Bilde. Hentet fra: https://pixabay.com/photos/search-engine-optimization-seo-4111000/-->
-                <p itemprop="text">
+                <p itemprop="text">Wave er et evalueringsverktøy som 
+                    analyserer nettsiden slik at man kan gjøre den mer tilgjengelig for brukere med ulike 
+                    typer vansker(WebAIM, u.å.). Dette verktøyet identifiserer feil rundt tilgjengelighet, 
+                    og feil basert på WCAG.
+                    <br>Når jeg evaluerte mine sider ved hjelp av Wave, passet jeg på å justere skjermstørrelsen, slik at jeg fikk testet de ulike breakpointsene. På sidene om Søkemotoroptimalisering (SEO) og Content Management System (CMS), dukket det opp 3 alerts; "skipped heading level", "redundandant link" og "underlined text". Den første alerten viste til overskriftene i tabellen på siden. Overskriftene stod som <h3>, og tidligere på siden hadde jeg kun brukt <h1>. Dette problemet løste jeg derfor ved å endre overskriftene til <h2>. Den andre alerten viste til referanselisten nederst på siden. "Redundandant link" forteller meg at jeg har en link som er gjentagende. Noen av referansene i lista har samme link, da de kommer fra samme nettside. Dersom jeg endrer på disse linkene vil referansene bli feil. Derfor valgte jeg å la de stå slik de var. Den siste alerten viste til understrekene som overskriftene i tabellen fikk når skjermen ble justert ned. Alerten fortalte at understreker viser brukeren at dette er en link. Ettersom overskriftene ikke er linker, løste jeg problemet ved å fjerne dekorasjonen.
+                    <br>I tillegg til disse feilene, dukket også opp en alert som sa at jeg hadde tomme knapper. Denne alerten viste til knappene i navigasjonsområde på toppen av siden. Ettersom navigasjonsområdet er likt på alle sidene, var denne feilen gjentagende. Alerten gjaldt knappene som hadde ikoner over seg, altså hamburgermenyen og nedtrekkspilen bak "meny". Dette løste jeg ved å legge ikonene inn i <a>-tagger istedenfor <button>-taggen.
                 </p>        
             </article>
             <article itemprop="speakable" class="innhold">
