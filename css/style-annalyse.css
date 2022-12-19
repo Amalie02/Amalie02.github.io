@@ -80,6 +80,7 @@ nav{
     left: 0;
     background-color: white;
     width: 100%;
+    z-index: 9999;
 }
 
 #subnav_innhold a{
@@ -118,6 +119,11 @@ main{
     line-height: 1.5; 
 }
 
+main hr{
+    border-top: 1px solid black;
+    width: 95%;
+}
+
 #intro{
     background-color: burlywood;
 }
@@ -125,6 +131,11 @@ main{
 #intro p{
     font-weight: bold;
     margin: 0.5rem;
+}
+
+#intro a{
+    color: black;
+
 }
 
 .innhold{
@@ -150,12 +161,12 @@ main{
     max-width: 400px;
 }
 
-.res{
+.bRes{
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
-    /* height: 100%; */
     padding: 0.5rem;
+    border: 1px solid black;
 }
 
 .bHoyre{
@@ -170,12 +181,17 @@ main{
     width: 40vw;
 }
 
+#fullTabell{
+    padding-top: 200px;
+    margin: 2vw;
+}
+
 .tabell{
     display: grid;
     grid-template-rows: 10vw 10vw 100px 10vw 100px 15vw 1fr;
     grid-template-columns: 1fr;
     background-color: #b3e5fc;
-    margin: 2vw;
+    margin-bottom: 100px;
 }
 
 .celle{
@@ -229,8 +245,25 @@ main{
 }
 
 .etter img{
-    width: 10vw;
+    width: 50vw;
+    max-width: 300px;
 }
+
+.click-zoom input[type=checkbox] {
+    display: none
+  }
+  
+.click-zoom img {
+    width: 400px;
+    margin: 100px;
+    transition: transform 0.25s ease;
+    cursor: zoom-in
+  }
+  
+  .click-zoom input[type=checkbox]:checked~img {
+    transform: scale(1.5);
+    cursor: zoom-out
+  }
 
 #uuE{
     display: flex;
@@ -248,6 +281,21 @@ main{
     max-width: 70vw;  
   
 }
+
+#ref{
+    padding-top: 10rem;
+}
+
+#ref p{
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: break-word;
+}
+
+#ref a{
+    word-break: break-all;
+}
+/*Kode for hvordan fikse tekst som går på utsiden av siden. Hentet fra: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Text/Wrapping_Text*/
 
 footer{
     grid-area: footer;
@@ -352,7 +400,7 @@ footer{
     }
 
     .tabell{
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: 10vw 10vw 100px 10vw 1fr;
         grid-template-columns: 1fr 1fr;
     }
     
@@ -441,15 +489,9 @@ footer{
     .tabell{
         grid-template-rows: 10vw 15vw 1fr;
         grid-template-columns: 1fr 1fr 1fr;
+        margin: 0%;
     }
-    
-    .celle{
-        /* display: flex;
-        align-items: center;
-        padding: 3vw;
-        border: 1px solid black; */
-    }
-    
+        
     .side{
         grid-row: 1 / span 1;
         grid-column: 1 / span 3;
@@ -483,6 +525,7 @@ footer{
     .etter{
         grid-row: 3 / span 1;
         grid-column: 3 / span 1;
+        padding: 0%;
     }
 
     .sosialeM{
