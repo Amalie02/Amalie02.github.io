@@ -30,7 +30,13 @@ body p, body a, body h4{
     font-family: 'Raleway', sans-serif;
 }
 
-#page-container{
+/* body{
+    background-color: papayawhip;
+    margin: 0%;
+    padding: 0%;
+} */
+
+#full-page-container{
     background-color: papayawhip;
     display: grid;
     grid-template-areas: "nav"
@@ -39,6 +45,7 @@ body p, body a, body h4{
                         "footer"; 
     grid-template-rows: 10vw 25vw 1fr 10vw;
     min-height: 100vh;
+    min-width: 100vw;
     height: 100%;
     width: 100vw;
 }
@@ -80,7 +87,6 @@ nav{
     left: 0;
     background-color: white;
     width: 100%;
-    z-index: 9999;
 }
 
 #subnav_innhold a{
@@ -117,6 +123,7 @@ main{
     display: flex;
     flex-direction: column;
     line-height: 1.5; 
+    width: 100%;
 }
 
 main hr{
@@ -141,7 +148,6 @@ main hr{
 .innhold{
     display: flex;
     flex-direction: column;
-    /* height: 90%; */
     margin: 5rem 0.5rem 5rem 0.5rem;
 }
 
@@ -157,7 +163,7 @@ main hr{
 #b1{
     float: right;
     padding: 1vw;
-    width: 70vw;
+    width: 70%;
     max-width: 400px;
 }
 
@@ -188,11 +194,12 @@ main hr{
 
 .tabell{
     display: grid;
-    grid-template-rows: 10vw 10vw 100px 10vw 100px 15vw 1fr;
-    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
     background-color: #b3e5fc;
     margin-bottom: 100px;
 }
+/*Kode for å lage tabell med grid. Hentet fra: https://css-tricks.com/snippets/css/complete-guide-grid/*/
 
 .celle{
     display: flex;
@@ -216,6 +223,8 @@ main hr{
 .res{
     grid-row: 3 / span 1;
     grid-column: 1 / span 1;
+    padding: 1rem;
+    border: 1px solid black;
     border-top: none;
 }
 
@@ -227,6 +236,8 @@ main hr{
 .til{
     grid-row: 5 / span 1;
     grid-column: 1 / span 1;
+    padding: 1rem;
+    border: 1px solid black;
     border-top: none;
 }
 
@@ -236,12 +247,16 @@ main hr{
     border-top: none;
 }
 
+.s{
+    grid-row: 7 / span 1;
+    grid-column: 1 / span 1;
+}
 .etter{
     display: flex;
     justify-content: center;
-    grid-row: 7 / span 1;
+    grid-row: 8 / span 1;
     grid-column: 1 / span 1;
-    padding: 5vw;
+    padding: 2vw;
 }
 
 .etter img{
@@ -254,8 +269,6 @@ main hr{
 }
   
 .click-zoom img {
-    width: 400px;
-    margin: 100px;
     transition: transform 0.25s ease;
     cursor: zoom-in
 }
@@ -268,8 +281,8 @@ main hr{
 #b2{
     float: right;
     padding: 1vw;
-    width: 20vw;
-    max-width: 400px;
+    width: 30vw;
+    max-width: 200px;
 }
 
 
@@ -279,7 +292,7 @@ main hr{
 }
 
 #uuE p{
-    color: white;
+    color: black;
     background-color: #CEEAD6;
     padding: 5px;
     border: 1px solid white;
@@ -291,7 +304,10 @@ main hr{
 }
 
 #ref{
-    padding-top: 10rem;
+    margin: 10rem 2vw 2vw 2vw;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: peachpuff;
 }
 
 #ref p{
@@ -408,8 +424,9 @@ footer{
     }
 
     .tabell{
-        grid-template-rows: 10vw 10vw 100px 10vw 1fr;
-        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        margin-bottom: 30vw;
     }
     
     .venstre{
@@ -445,8 +462,15 @@ footer{
         grid-column: 1 / span 2;
     }
     
-    .etter{
+    .s{
         grid-row: 5 / span 1;
+        grid-column: 1 / span 2;
+        justify-content: center;
+        border-top: 1px solid black;
+    }
+    
+    .etter{
+        grid-row: 6 / span 1;
         grid-column: 1 / span 2;
     }
     
@@ -494,48 +518,10 @@ footer{
         color: white;
     }
 
-    .tabell{
-        grid-template-rows: 10vw 15vw 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin: 0%;
-    }
-        
-    .side{
-        grid-row: 1 / span 1;
-        grid-column: 1 / span 3;
+    #fullTabell{
+        margin: 5vw;
     }
     
-    .r{
-        grid-row: 2 / span 1;
-        grid-column: 1 / span 1;
-    }
-    
-    .res{
-        grid-row: 3 / span 1;
-        grid-column: 1 / span 1;
-    }
-    
-    .t{
-        grid-row: 2 / span 1;
-        grid-column: 2 / span 1;
-    }
-    .til{
-        grid-row: 3 / span 1;
-        grid-column: 2 / span 1;
-    }
-    
-    .b{
-        grid-row: 2 / span 1;
-        grid-column: 3 / span 1;
-        border-left: none;
-    }
-    
-    .etter{
-        grid-row: 3 / span 1;
-        grid-column: 3 / span 1;
-        padding: 0%;
-    }
-
     .sosialeM{
         justify-content: space-evenly;
         align-content: center;

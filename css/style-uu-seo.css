@@ -221,6 +221,13 @@ main hr{
 }
 /*Kode for kantelinjene i tabellen. Hentet fra: https://www.w3schools.com/css/css_border.asp*/
 
+#ref{
+    margin: 10rem 2vw 2vw 2vw;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: peachpuff;
+}
+
 #ref p{
     display: flex;
     flex-direction: column;
