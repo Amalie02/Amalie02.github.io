@@ -14,12 +14,18 @@ body h1{
 }
 
 body h2, body h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+.body h3{
     font-size: 1rem;
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
 }
 
-body p, body a{
+body p, body a, body h4{
     font-size: 0.9rem;
     font-family: 'Raleway', sans-serif;
 }
@@ -230,6 +236,7 @@ main{
     display: flex;
     justify-content: center;
 }
+
 #uuE p{
     color: white;
     background-color: #CEEAD6;
@@ -298,11 +305,15 @@ footer{
         font-size: calc(2rem + 1vw);    
     }
     
-    body h2, body h3{
+    body h2{
         font-size: calc(1rem + 1vw);
     }
+
+    .body h3{
+        font-size: calc(0.9rem + 1vw);
+    }
     
-    body p, body a{
+    body p, body a, body h4{
         font-size: calc(0.7rem + 1vw);
     }
     /*Kode for å gjøre tekst responsivt. Hentet fra: https://blog.hubspot.com/website/responsive-text*/
@@ -390,11 +401,15 @@ footer{
         font-size: 3rem;    
     }
     
-    body h2, body h3{
+    body h2{
         font-size: 1.6rem;
     }
     
-    body p, body ul li, nav a{
+    .body h3{
+        font-size: 1.5rem;
+    }
+
+    body p, body a, body h4{
         font-size: 1.3rem;
     }
 
