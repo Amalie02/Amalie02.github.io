@@ -120,8 +120,10 @@ main{
 
 .tEtabell{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(13, 1fr);
+    /* grid-template-columns: 1fr 1fr; */
+    /* grid-template-rows: repeat(13, 1fr); */
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     background-color: #b3e5fc;
     border: 1px solid black;
     padding: 10px;
@@ -131,70 +133,104 @@ main{
 .pri{
     grid-row: 1 / span 1;
     grid-column: 1 / span 1;
+    border: 1px solid black;
+
 }
 .p{
     grid-row: 2 / span 1;
     grid-column: 1 / span 1;
+    border: 1px solid black;
+
 }
 .retLin{
     grid-row: 4 / span 1;
     grid-column: 1 / span 1;
+    border: 1px solid black;
+
 }
 .rL1{
     grid-row: 5 / span 1;
     grid-column: 1 / span 1;
+    border: 1px solid black;
+
 }
 .rL2{
     grid-row: 7 / span 1;
     grid-column: 1 / span 1;
+    border: 1px solid black;
+
 }
 .rL3{
     grid-row: 9 / span 1;
     grid-column: 1 / span 1;
+    border: 1px solid black;
+
 }
 .rL4{
     grid-row: 11 / span 1;
     grid-column: 1 / span 1;
+    border: 1px solid black;
+
 }
 .k{
     grid-row: 4 / span 1;
     grid-column: 2 / span 1;
+    border: 1px solid black;
+
 }
 .A1{
     grid-row: 5 / span 1;
     grid-column: 2 / span 1;
+    border: 1px solid black;
+
 }
 .A2{
     grid-row: 7 / span 1;
     grid-column: 2 / span 1;
+    border: 1px solid black;
+
 }
 .A3{
     grid-row: 9 / span 1;
     grid-column: 2 / span 1;
+    border: 1px solid black;
+
 }
 .A4{
     grid-row: 11 / span 1;
     grid-column: 2 / span 1;
+    border: 1px solid black;
+
 }
 .AA2{
     grid-row: 8 / span 1;
     grid-column: 2 / span 1;
+    border: 1px solid black;
+
 }
 .AA4{
     grid-row: 12 / span 1;
     grid-column: 2 / span 1;
+    border: 1px solid black;
+
 }
 .AAA1{
     grid-row: 6 / span 1;
     grid-column: 2 / span 1;
+    border: 1px solid black;
+
 }
 .AAA3{
     grid-row: 10 / span 1;
     grid-column: 2 / span 1;
+    border: 1px solid black;
+
 }
 .AAA4{
     grid-row: 13 / span 1;
     grid-column: 2 / span 1;
+    border: 1px solid black;
+
 }
 
 footer{
@@ -297,8 +333,10 @@ footer{
     
     .tEtabell{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: repeat(7, 1fr);
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        /* grid-template-rows: repeat(7, 1fr); */
+        grid-template-columns: auto;
+        grid-template-rows: auto;
         max-width: unset;
     }
     .pri{
@@ -345,6 +383,8 @@ footer{
         grid-row: 2 / span 1;
         grid-column: 2 / span 1;
         padding: 10px;
+        border: 1px solid black;
+
     }
     .A1{
         grid-row: 4 / span 1;
@@ -370,6 +410,8 @@ footer{
         grid-row: 2 / span 1;
         grid-column: 3 / span 1;
         padding: 10px;
+        border: 1px solid black;
+
     }
     .AA2{
         grid-row: 5 / span 1;
@@ -385,6 +427,8 @@ footer{
         grid-row: 2 / span 1;
         grid-column: 4 / span 1;
         padding: 10px;
+        border: 1px solid black;
+
     }
     .AAA1{
         grid-row: 4 / span 1;
@@ -403,11 +447,7 @@ footer{
     body h1{
         font-size: 3rem;    
     }
-    
-    /* body h2, body h3{
-        font-size: 1.6rem;
-    } */
-    
+        
     body p{
         font-size: 1.3rem;
     }
@@ -446,7 +486,7 @@ footer{
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(14, 1fr);
         background-color: #b3e5fc;
-        /* box-shadow: 5px 10px 10px grey; */
+
         border: 1px solid black;
         padding: 10px;
         margin: 3vw;
