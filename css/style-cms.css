@@ -20,7 +20,7 @@ body h2, body h3{
 }
 
 body p, body ul li, body a{
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -62,11 +62,15 @@ nav{
 
 #logo img{
     width: 10vw;
+    max-width: 70px;
 }
 
 #bars{
+    background-color: black;
+    outline: none;
+    border: none;
     font-size: 6vw;
-    margin: 3vw;
+    margin: 1vw;
 }
 
 .nav_meny{
