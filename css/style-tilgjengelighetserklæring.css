@@ -19,7 +19,7 @@ body h2, body h3{
     font-family: 'Raleway', sans-serif;
 }
 
-body p{
+body p, body a{
     font-size: 0.9rem;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
@@ -130,107 +130,107 @@ main{
     margin: 3vw;
     max-width: 300px;
 }
+
 .pri{
     grid-row: 1 / span 1;
     grid-column: 1 / span 1;
     border: 1px solid black;
-
 }
+
 .p{
     grid-row: 2 / span 1;
     grid-column: 1 / span 1;
     border: 1px solid black;
-
 }
+
 .retLin{
     grid-row: 4 / span 1;
     grid-column: 1 / span 1;
     border: 1px solid black;
-
 }
+
 .rL1{
     grid-row: 5 / span 1;
     grid-column: 1 / span 1;
     border: 1px solid black;
-
 }
+
 .rL2{
     grid-row: 7 / span 1;
     grid-column: 1 / span 1;
     border: 1px solid black;
-
 }
+
 .rL3{
     grid-row: 9 / span 1;
     grid-column: 1 / span 1;
     border: 1px solid black;
-
 }
+
 .rL4{
     grid-row: 11 / span 1;
     grid-column: 1 / span 1;
     border: 1px solid black;
-
 }
+
 .k{
     grid-row: 4 / span 1;
     grid-column: 2 / span 1;
     border: 1px solid black;
-
 }
+
 .A1{
     grid-row: 5 / span 1;
     grid-column: 2 / span 1;
     border: 1px solid black;
-
 }
+
 .A2{
     grid-row: 7 / span 1;
     grid-column: 2 / span 1;
     border: 1px solid black;
-
 }
+
 .A3{
     grid-row: 9 / span 1;
     grid-column: 2 / span 1;
     border: 1px solid black;
-
 }
+
 .A4{
     grid-row: 11 / span 1;
     grid-column: 2 / span 1;
     border: 1px solid black;
-
 }
+
 .AA2{
     grid-row: 8 / span 1;
     grid-column: 2 / span 1;
     border: 1px solid black;
-
 }
+
 .AA4{
     grid-row: 12 / span 1;
     grid-column: 2 / span 1;
     border: 1px solid black;
-
 }
+
 .AAA1{
     grid-row: 6 / span 1;
     grid-column: 2 / span 1;
     border: 1px solid black;
-
 }
+
 .AAA3{
     grid-row: 10 / span 1;
     grid-column: 2 / span 1;
     border: 1px solid black;
-
 }
+
 .AAA4{
     grid-row: 13 / span 1;
     grid-column: 2 / span 1;
     border: 1px solid black;
-
 }
 
 footer{
@@ -293,7 +293,7 @@ footer{
         font-size: calc(1rem + 1vw);
     }
     
-    body p{
+    body p, body a{
         font-size: calc(0.7rem + 1vw);
     }
     /*Kode for å gjøre tekst responsivt. Hentet fra: https://blog.hubspot.com/website/responsive-text*/
@@ -339,15 +339,18 @@ footer{
         grid-template-rows: auto;
         max-width: unset;
     }
+
     .pri{
         grid-row: 1 / span 1;
         grid-column: 1 / span 2;
     }
+
     .p{
         grid-row: 1 / span 1;
         grid-column: 3 / span 2;
         padding: 10px;
     }
+
     .k{
         display: none;
     }
@@ -356,85 +359,98 @@ footer{
         grid-column: 1 / span 1;
         padding: 10px;
     }
+
     .rL1{
         grid-row: 4 / span 1;
         grid-column: 1 / span 1;
         padding: 10px;
     }
+
     .rL2{
         grid-row: 5 / span 1;
         grid-column: 1 / span 1;
         padding: 10px;
     }
+
     .rL3{
         grid-row: 6 / span 1;
         grid-column: 1 / span 1;
         padding: 10px;
     }
+
     .rL4{
         grid-row: 7 / span 1;
         grid-column: 1 / span 1;
         padding: 10px;
     }
+
     .A, .AA, .AAA{
         visibility: visible;
     }
+
     .A{
         grid-row: 2 / span 1;
         grid-column: 2 / span 1;
         padding: 10px;
         border: 1px solid black;
-
     }
+
     .A1{
         grid-row: 4 / span 1;
         grid-column: 2 / span 1;
         padding: 10px;
     }
+
     .A2{
         grid-row: 5 / span 1;
         grid-column: 2 / span 1;
         padding: 10px;
     }
+
     .A3{
         grid-row: 6 / span 1;
         grid-column: 2 / span 1;
         padding: 10px;
     }
+
     .A4{
         grid-row: 7 / span 1;
         grid-column: 2 / span 1;
         padding: 10px;
     }
+
     .AA{
         grid-row: 2 / span 1;
         grid-column: 3 / span 1;
         padding: 10px;
         border: 1px solid black;
-
     }
+
     .AA2{
         grid-row: 5 / span 1;
         grid-column: 3 / span 1;
         padding: 10px;
     }
+
     .AA4{
         grid-row: 7 / span 1;
         grid-column: 3 / span 1;
         padding: 10px;
     }
+
     .AAA{
         grid-row: 2 / span 1;
         grid-column: 4 / span 1;
         padding: 10px;
         border: 1px solid black;
-
     }
+
     .AAA1{
         grid-row: 4 / span 1;
         grid-column: 4 / span 1;
         padding: 10px;
     }
+
     .AAA3{
         grid-row: 6 / span 1;
         grid-column: 4 / span 1;
@@ -448,7 +464,7 @@ footer{
         font-size: 3rem;    
     }
         
-    body p{
+    body p, body a{
         font-size: 1.3rem;
     }
 
