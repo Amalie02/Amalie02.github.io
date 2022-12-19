@@ -251,19 +251,27 @@ main hr{
 
 .click-zoom input[type=checkbox] {
     display: none
-  }
+}
   
 .click-zoom img {
     width: 400px;
     margin: 100px;
     transition: transform 0.25s ease;
     cursor: zoom-in
-  }
+}
   
-  .click-zoom input[type=checkbox]:checked~img {
+.click-zoom input[type=checkbox]:checked~img {
     transform: scale(1.5);
     cursor: zoom-out
-  }
+}
+
+#b2{
+    float: right;
+    padding: 1vw;
+    width: 20vw;
+    max-width: 400px;
+}
+
 
 #uuE{
     display: flex;
