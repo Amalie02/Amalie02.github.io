@@ -122,6 +122,9 @@ main{
 }
 
 .innhold{
+    display: flex;
+    flex-direction: column;
+    /* height: 90%; */
     margin: 5rem 0.5rem 5rem 0.5rem;
 }
 
@@ -130,11 +133,35 @@ main{
     float: right;
 }
 
+.innhold section{
+    padding-bottom: 200px;
+}
+
 #b1{
     float: right;
-    padding: 1.5vw;
+    padding: 1vw;
     width: 70vw;
     max-width: 400px;
+}
+
+.res{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    /* height: 100%; */
+    padding: 0.5rem;
+}
+
+.bHoyre{
+    float: right;
+    padding: 1vw;
+    width: 40vw;
+}
+
+.bVenstre{
+    float: left;
+    padding: 1vw;
+    width: 40vw;
 }
 
 .tabell{
